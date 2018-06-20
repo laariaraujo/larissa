@@ -11,7 +11,7 @@
 void mama(){
     int *v;
     int n = 4;
-    v = malloc (4);
+    v = malloc (sizeof(int));
     v = &n;
     printf("%d\n",n);
     *v = 2;
