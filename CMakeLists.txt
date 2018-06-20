@@ -3,4 +3,4 @@ project(aula02)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(aula02 aula01.cpp)
+add_executable(${PROJECT_NAME} main.c)

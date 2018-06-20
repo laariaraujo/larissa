@@ -1,7 +1,15 @@
-#include<stdlib.h>
-#include <stdio.h>
+//
+// Created by eve on 20/06/18.
+//
 
-int main(int arg, char*argv[]){
+#ifndef AULA02_PONTEIRINHOS_H
+#define AULA02_PONTEIRINHOS_H
+
+
+
+
+
+void pont(){
     //declara uma variavel do tipo float
     float numero = 34.78;
 
@@ -16,5 +24,6 @@ int main(int arg, char*argv[]){
     //imprime 2
     printf("%f\n",numero);
     printf("%f\n",*pf);
-    return 0;
 }
+
+#endif //AULA02_PONTEIRINHOS_H
