@@ -11,11 +11,16 @@
 void mama(){
     int *v;
     int n = 4;
-    v = malloc (sizeof(int));
-    v = &n;
-    printf("%d\n",n);
-    *v = 2;
-    printf("%d\n",*v);
+    //declaracao do vetor como malloc
+    v = malloc (sizeof(int) * n);
+    for (int i = 0; i < n; i++) {
+        v[i] = i*5+1;
+    }
+    //imprimir o vetor
+    for (int i = 0; i < n; i++) {
+        printf("%d\n",v[i]);
+    }
+    
     free (v);
 }
 #endif //AULA02_MALLOC_H
