@@ -7,17 +7,16 @@
 
 #include "ponteirinhos.h"
 #include "malloc.h"
+#include "passagem.h"
+
 
 int main(int argc, char *argv[]){
-    int a=2;
-    int b = 3;
+    int num1;
+    int num2;
 
-    int **m1 = alocaMatriz(2,3);
-    int **m2 = alocaMatriz(3,2);
-    int **m3 = alocaMatriz(2,2);
-    multMatriz(m1,2,3,m2,3,2,m3);
-    preencheMatriz(m1,2,3);
-    preencheMatriz(m2,3,2);
-    preencheMatriz(m3,2,2);
+    scanf("%d",&num1);
+    scanf("%d",&num2);
+
+    printf("%d",somaint(num1,num2));
     return 0;
 }

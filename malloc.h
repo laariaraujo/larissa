@@ -26,6 +26,16 @@ void preencheMatriz(int**m,int l, int c){
     }
     puts("");
 }
+void imprimeMatriz(int**m,int l, int c){
+    int i,j;
+    for(i=0; i<l; i++){
+        for(j=0; j<c; j++){
+            printf("%2d ",m[i][j]);
+        }
+        puts("");
+    }
+    puts("");
+}
 void multMatriz(int **a, int al, int ac, int **b, int bl, int bc, int **c){
     if(ac != bl){
         puts("erro");
@@ -41,6 +51,14 @@ void multMatriz(int **a, int al, int ac, int **b, int bl, int bc, int **c){
         }
     }
 
+}
+
+void destroiMatriz(int **m, int l) {
+    int i;
+    for (i = 0; i < l; i++) {
+        free(m[i]);
+    }
+    free(m);
 }
 
 #endif //AULA02_MALLOC_H
