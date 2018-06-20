@@ -13,8 +13,8 @@ void mama(){
     int n = 4;
     v = malloc (4);
     v = &n;
-    *v = 2;
     printf("%d\n",n);
+    *v = 2;
     printf("%d\n",*v);
     free (v);
 }
