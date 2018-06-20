@@ -2,9 +2,12 @@
 #include <stdio.h>
 
 int main(int arg, char*argv[]){
-    int a = 2;
-    float b =2.5;
-    printf("%i\n",int(b));
-    printf("%f\n",b);
+    float numero = 34.78;
+
+    float *pf;
+    pf = &numero;
+    printf("%f\n",*pf);
+    *pf = 1.5;
+    printf("%f\n",*pf);
     return 0;
 }
