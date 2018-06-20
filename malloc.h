@@ -8,19 +8,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void mama(){
-    int *v;
-    int n = 4;
-    //declaracao do vetor como malloc
-    v = malloc (sizeof(int) * n);
-    for (int i = 0; i < n; i++) {
-        v[i] = i*5+1;
+int ** alocaMatriz(int l, int c){
+    int **m = malloc(sizeof(int*)*l);
+    int i;
+    for(i=0; i< l; i++){
+        m[i] = malloc(sizeof(int)*c);
     }
-    //imprimir o vetor
-    for (int i = 0; i < n; i++) {
-        printf("%d\n",v[i]);
+    return m;
+}
+void preencheMatriz(int**m,int l, int c){
+    int i,j;
+    for(i=0; i<l; i++){
+        for(j=0; j<c; j++){
+            printf("%2d ",m[i][j]=10*i + j);
+        }
+        puts("");
     }
-    
-    free (v);
+    puts("");
 }
 #endif //AULA02_MALLOC_H

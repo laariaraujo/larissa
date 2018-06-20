@@ -9,7 +9,10 @@
 #include "malloc.h"
 
 int main(int argc, char *argv[]){
-    //pont();
-    mama();
+    int a=2;
+    int b = 3;
+
+    int **m1 = alocaMatriz(2,3);
+    preencheMatriz(m1,2,3);
     return 0;
 }
