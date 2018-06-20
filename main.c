@@ -16,11 +16,16 @@ int main(int argc, char *argv[]){
 
     scanf("%d",&num1);
     scanf("%d",&num2);
+    puts("");
     printf("%d",num1);
-    printf("%d",num2);
-    printf("%d",somaint(num1,num2));
-    troca(num1,num2);
+    puts("");
+    printf("%d\n",num2);
+    puts("com a troca");
+
+    troca(&num1,&num2);
+
     printf("%d",num1);
+    puts("");
     printf("%d",num2);
     return 0;
 }
