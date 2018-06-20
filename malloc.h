@@ -20,10 +20,27 @@ void preencheMatriz(int**m,int l, int c){
     int i,j;
     for(i=0; i<l; i++){
         for(j=0; j<c; j++){
-            printf("%2d ",m[i][j]=10*i + j);
+            printf("%2d ",m[i][j]=10*i + j - l);
         }
         puts("");
     }
     puts("");
 }
+void multMatriz(int **a, int al, int ac, int **b, int bl, int bc, int **c){
+    if(ac != bl){
+        puts("erro");
+        return;
+    }
+    int i,j,k;
+
+    for(i=0; i<al; i++){
+        for(j=0; j<bc; j++){
+            for(k=0; k<ac; k++){
+                c[i][j] += a[i][k] * b[k][j];
+            }
+        }
+    }
+
+}
+
 #endif //AULA02_MALLOC_H
