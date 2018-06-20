@@ -6,8 +6,10 @@
 #include <stdio.h>
 
 #include "ponteirinhos.h"
+#include "malloc.h"
 
 int main(int argc, char *argv[]){
-    pont();
+    //pont();
+    mama();
     return 0;
 }
