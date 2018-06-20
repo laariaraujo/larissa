@@ -3,7 +3,8 @@
 
 int main(int arg, char*argv[]){
     int a = 2;
-    printf("%i",a);
-    printf("%d",a);
+    float b =2.5;
+    printf("%i\n",b);
+    printf("%f\n",b);
     return 0;
 }
