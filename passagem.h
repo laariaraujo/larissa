@@ -13,5 +13,5 @@ void troca(int *a, int *b){
     tmp = *a;
     *a = *b;
     *b = tmp;
-}
+
 #endif //AULA02_PASSAGEM_H
